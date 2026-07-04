@@ -1,0 +1,76 @@
+/* Universal Selectors  */
+* {
+    front-family:  sans-serif;
+}
+
+/* Type Selectors  */
+h1 {
+    color: red;
+}
+p {
+    color: blue;
+}
+/* Class Selectors  */
+.highlight {
+    background-color: yellow;
+}
+/* ID Selectors  */
+#unique-box {
+    border: 8px solid black;
+}
+/* Grouping Selectors  */
+h1, .highlight, #unique-box {
+    font-style: italic;
+}
+/* Descendant Selector */
+.nested > p {
+   background-color: green;
+}
+/* Child Selector */
+.nested > div > div>p {
+    background-color: red;
+}
+/* Adjacent Sibling Selector */
+h3+ p {
+    color: purple;
+}
+/* General Sibling Selector */
+h3 ~ p {
+    color: orange;
+}
+/* Attribute Selector */
+input[type="text"] {
+    border: 2px solid blue;
+}
+input[type="password"] {
+    border: 2px solid green;
+}
+/*child selector with attribute selector */
+ul > li{
+    color: red;
+
+}
+/* Pseudo-class Selector */
+.hover-button:hover {
+    background-color: red;
+}
+input:focus {
+    outline: 2px solid blue;
+}
+li:first-child {
+    font-weight: bold;
+}
+li:nth-child(2) {
+    color: blue;
+}
+/* Pseudo-element Selector */
+.pseudo::first-line {
+
+    color: red;
+    text-decoration: ;
+}
+.pseudo::before {
+    content: "💀 ";
+    color: green;
+
+}
