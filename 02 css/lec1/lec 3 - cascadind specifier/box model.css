@@ -1,0 +1,14 @@
+.one{
+    background-color: red;
+    max-width: 500px;
+    min-height: 100px;
+}
+.parent{
+    background-color: blue;
+    width: 300 px;
+}
+.two{
+    background-color: yellow;
+    width : 50%
+    
+}
