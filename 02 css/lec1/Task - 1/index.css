@@ -1,4 +1,5 @@
 .*{
+    
     box-sizing: border-box;
 }
 .parent{
@@ -47,8 +48,9 @@
     background-color: brown;
     position: absolute;
     margin: 72px;
-    top: 100px;;
-    
+    top: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
 
 
         
