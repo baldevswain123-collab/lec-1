@@ -1,0 +1,16 @@
+.container{
+    background-color: lightgray;
+    height: 60vh;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: repeat(3,100px);
+    gap: 10px  15px;
+    /* auto , percentage ,fraction  */
+    /* grid-template-columns: repeat(4,20%);
+    grid-template-columns: repeat(4,25%); */
+    grid-template-columns: 1fr;
+}
+.box{
+    color: white;
+font-size: 3rem;
+}
