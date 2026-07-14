@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./src/output.css" rel="stylesheet">
+
+  </head>
+</head>
+<body>
+    <h1 class="bg-indigo-500 text-red-600">Welcome to Tailwind Css</h1>
+    <p class="mt-6 p-4 rounded-[10px] mx-2 
+     bg-red-200 text-sm 
+     sm:bg-yellow-300 sm:text-lg
+     md:bg-green-300 md:text-xl
+     lg:bg-blue-300 lg:text-2xl
+     xl:bg-black-300 xl:text-xl
+      ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic, consequatur amet expedita voluptates provident? Maxime dolorum hic qui quia quis aut voluptatibus quas! Eveniet cum eos dolores harum non?
+    </p>
+    <div class="bg-yellow-300 text-white flex flex-col item-center md:bg-blue-600 md:flex-row justify-center gap-2 p-4 my-6  ">
+        <div class="bg-red-500 p-4">box-1</div>
+        <div class="bg-green-500 p-4">box-2</div>
+        <div class="bg-orange-500 p-4">box-3</div>
+    </div>
+    <div class="bg-cyan-200 text-black text-xl border-2 p-4
+         grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-2">
+        <div class="bg-red-300">box-1</div>
+        <div class="bg-blue-300">box-2</div>
+        <div class="bg-teal-500 md:row-span-2">box-3</div>
+        <div class="bg-pink-500 md:col-span-2">box-4</div>
+    </div>
+</body>
+</html>
