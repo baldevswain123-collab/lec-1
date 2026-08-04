@@ -55,3 +55,47 @@ console.log(fruits)
 //step 4 =>if not present, return -1.
 alert("Value not found in the array")
 }
+
+fruits.push("Banana")//it will add the value at the end of the array.
+console.log(fruits)
+console.log("last index of Banana is",fruits.lastIndexOf("Banana"))//it will return the last index of the value in the array. If the value is not present, it will return -1.
+
+console.log(fruits.slice(1, 3))//it will return a new array with the values from index 1 to index 2. It will not modify the original array.
+console.log(fruits.slice(1, 4))//it will return a new array with the values from index 1 to the end of the array. It will not modify the original array.
+console.log(fruits.slice(2))//it will return a new array with the values from index 1 to the end of the array. It will not modify the original array.
+console.log(fruits.slice())//it will return a new array with the values from index 1 to the end of the array. It will not modify the original array.
+
+// fruits.splice(2, 3)//it will remove the values from index 1 to index 2. It will modify the original array.
+// console.log("After splice:", fruits)
+
+fruits.splice(2, 1, "Pineapple")//it will remove the values from index 1 to index 2 and add the new values at index 1. It will modify the original array. console.log("After splice2:", fruits)
+console.log("After splice2:", fruits)
+
+const numbers = [1, 2, 3, 4, 5]
+const fruitsWithNumbers = fruits.concat(numbers)//it will return a new array with the values from both the arrays. It will not modify the original array.
+console.log("fruitsWithNumbers", fruitsWithNumbers)
+
+const fruitsString = fruits.join('-')//it will return a new array with the values from both the arrays. It will not modify the original array.
+console.log(fruitsString)
+
+fruits.reverse()//it will reverse the values in the array. It will modify the original array.
+console.log("After reverse:", fruits)
+
+fruits.push(1, 2, 3)
+fruits.sort()//it will sort the values in the array. It will modify the original array.
+console.log("After sort:", fruits)
+
+const arr = [10, 20, 30, 5, 15, 25]
+arr.sort((a, b) => a - b)//it will sort the values in the array in ascending order. It will modify the original array.
+console.log(arr)
+
+// for a function declartion
+//  arr.sort(function xyz(a, b) {
+//      return a - b
+//  })
+
+function Sort(a, b) {
+    return a - b
+}
+arr.sort(Sort)
+console.log(arr)
