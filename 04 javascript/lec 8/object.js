@@ -95,3 +95,4 @@ console.log("t1 roll is:",t1.roll)
 console.log("t2 college is:",t1.t2.collegeName)
 console.log("t2 branch is:",t1.t2["branch"])
 console.log("t3 city is:",t1.t2.t3.city)
+
