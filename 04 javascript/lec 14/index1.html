@@ -1,0 +1,23 @@
+const partyContainer = document.getElementById('party');
+
+// 1. Generate 30 div containers with <p> elements
+for (let i = 1; i <= 30; i++) {
+  const divBox = document.createElement('div');
+  divBox.className = 'hat-box';
+
+  const pElement = document.createElement('p');
+  pElement.textContent = `👒 Hat #${i}`;
+
+  divBox.appendChild(pElement);
+  partyContainer.appendChild(divBox);
+}
+
+// 2. Event Delegation: Handle clicks on any of the 30 elements via the parent
+partyContainer.addEventListener('click', (event) => {
+  // Find the closest parent div with the class 'hat-box'
+  const clickedBox = event.target.closest('.hat-box');
+
+  if (clickedBox) {
+    alert(`Greeting! You clicked: ${clickedBox.innerText}`);
+  }
+});
