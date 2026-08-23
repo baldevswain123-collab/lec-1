@@ -33,22 +33,72 @@
     //     console.log("Tea is ready to serve");    
     // },3000)
 
-    function makeTea(step, delay, nextStep ){
-        setTimeout(() =>{
-            console.log(step);
+    // function makeTea(step, delay, nextStep ){
+    //     setTimeout(() =>{
+    //         console.log(step);
 
-        if(nextStep) nextStep() //if nextStep available then nextStep call back function we declare
-        },delay)
+    //     if(nextStep) nextStep() //if nextStep available then nextStep call back function we declare
+    //     },delay)
+    // }
+
+    // makeTea("Boil water",1000, () => {
+    //     makeTea("Add ingredients like Tea leaves, ginger....",1000, () =>{
+    //         makeTea("Tea is ready to serve",1000,() =>{
+    //             makeTea("Pour in cups", 1000)
+    //         })
+    //     })
+    // })
+
+    // function sendEmail(success, failure){
+    //     const number = Math.round(Math.random() * 11)
+
+    //     if(number > 5){
+    //         success()
+    //     }else{
+    //     failure()
+    //     }
+    // }
+    // function success(){
+    //     console.log("Email send successfully", );
+    // }
+    // function failure(){
+    //     console.log("Unable send to Email !!");
+    // }
+    // sendEmail(success, failure)
+
+    function sendEmail(success, failure){
+        const number = Math.round(Math.random() * 11)
+
+        if(number > 5){
+            success()
+        }else{
+        failure()
+        }
     }
 
-    makeTea("Boil water",1000, () => {
-        makeTea("Add ingredients like Tea leaves, ginger....",1000, () =>{
-            makeTea("Tea is ready to serve",1000,() =>{
-                makeTea("Pour in cups", 1000)
-            })
+    sendEmail(function(){
+        console.log("Email-1 send successfully");
+        sendEmail(()=>{
+            console.log("Email-2 sned successfully"); 
+        sendEmail(()=>{
+            console.log("Email-3 send successfully");
+        sendEmail(()=>{
+            console.log("Email-4 send successfully");            
+        },()=>{
+            console.log("Unable send to Email-4");    
         })
-    })
+        },()=>{
+            console.log("Unable to send Email-3"); 
+        })  
+        },() =>{
+            console.log("Unable to send Email-2");   
+        })
+        }, () =>{
+        console.log("Unable send to Email-1");
+        
+        })
 
   </script>
 </body>
+
 </html>
