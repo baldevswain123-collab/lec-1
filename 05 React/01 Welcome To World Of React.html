@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body style="font-family: cursive;">
+    <h1>Welcome TO The World Of React</h1>
+
+    <div id="root"></div>
+
+    <script>
+        const root = document.querySelector("#root")
+
+        //To crate a react elemnet(React element is simple javascript object)
+        //React.creatElement()//tag, Props(Attributes), Children
+        const h2 = React.createElement("h2", {}, "Hello React")
+
+        //For Rederning teh element we need a starting position 
+        ReactDOM.createRoot(root).render(h2)
+    </script>
+</body>
+</html>
